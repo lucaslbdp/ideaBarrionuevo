@@ -1,10 +1,11 @@
 import Header from './components/common/Header';
-import "../src/sass/app.scss";
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div>
       <Header />
+      <ItemListContainer />
     </div>
   );
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-import "../../sass/app.scss";
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import CartWidget from './CartWidget';
+import "./common.css";
 
 const Header = () => {
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="header__navbar">
+    return <React.Fragment>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="#home">Logo de Empresa</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,14 +22,16 @@ const Header = () => {
                         <Nav.Link href="#pricing">Contacto</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets"><FontAwesomeIcon icon={faWhatsapp} className="header__redes"/></Nav.Link>
+                        <Nav.Link href="#deets"><FontAwesomeIcon icon={faWhatsapp} /></Nav.Link>
                         <Nav.Link href="#deets"><FontAwesomeIcon icon={faFacebook} /></Nav.Link>
                         <Nav.Link href="#deets"><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
                     </Nav>
+                <CartWidget />
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    );
+    </React.Fragment>
+
 };
 
 export default Header;
