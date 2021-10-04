@@ -19,7 +19,7 @@ const ItemCount = () => {
 
     return (
         <div className="container">
-            <h3>Jean {counter}</h3
+            <h3>Jean {counter}</h3>
             <Button className="btn btn-danger" onClick={() => restar()}>-</Button>
             <Button className="btn btn-primary" onClick={() => sumar()}>+</Button>
         </div>

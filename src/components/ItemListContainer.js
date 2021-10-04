@@ -1,34 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from "react-router-dom";
+import ItemList from "./ItemList";
+import misProductos from "../data/products.json";
 
 const ItemListContainer = () => {
 
-    const products = [{ id: 1, categoria: "bebés", nombre: "jean", precio: 400 },
-    { id: 2, categoria: "bebés", nombre: "body", precio: 600 },
-    { id: 3, categoria: "bebés", nombre: "remera", precio: 300 },
-    { id: 4, categoria: "niños", nombre: "jean", precio: 400 },
-    { id: 5, categoria: "niños", nombre: "camisa", precio: 500 },
-    { id: 6, categoria: "niños", nombre: "remera", precio: 300 }
-    ];
+    const [productos, setProductos] = useState([]);
+    const { id: idCategory } = useParams();
 
-    const getProducts = () => {
-        return new Promise((res, req) => {
-            setTimeout(() => {
-                res(products);
-            }, 2000)
-        })
-    }
+    useEffect(() => {
 
-    async function allProducts() {
-        const products = await getProducts();
-        console.log(products);
-    }
-    allProducts();
+        const getProducts = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (idCategory) {
+                        const filtroCategory = misProductos.filter(
+                            (item) => item.categoria === idCategory
+                        );
+                        resolve(filtroCategory);
+                    } else {
+                        resolve(misProductos);
+                    }
 
-    return (
-        <div className="container">
-            <h1>Catalogo</h1>
-        </div>
-    );
+                    reject("error al traer productos");
+                }, 3000);
+            });
+        };
+
+        setProductos([]);
+        getProducts()
+            .then((res) => setProductos(res))
+            .catch((error) => console.log(error));
+    }, [idCategory]);
+
+    return <ItemList productos={productos} />;
 };
 
 export default ItemListContainer;
