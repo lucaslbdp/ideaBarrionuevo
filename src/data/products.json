@@ -1,38 +1,50 @@
 [
     {
         "id": 1,
+        "imagen": "../../public/img/remeraJuvenil.jpg",
         "categoria": "bebés",
-        "nombre": "jean",
+        "nombre": "Jean",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 400
     },
     {
         "id": 2,
+        "imagen": "https://via.placeholder.com/150",
         "categoria": "bebés",
-        "nombre": "body",
+        "nombre": "Body",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 600
     },
     {
         "id": 3,
+        "imagen": "https://via.placeholder.com/150",
         "categoria": "bebés",
-        "nombre": "remera",
+        "nombre": "Remera",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 300
     },
     {
         "id": 4,
+        "imagen": "https://via.placeholder.com/150",
         "categoria": "niños",
-        "nombre": "jean",
+        "nombre": "Jean",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 400
     },
     {
         "id": 5,
+        "imagen": "https://via.placeholder.com/150",
         "categoria": "niños",
-        "nombre": "camisa",
+        "nombre": "Camisa",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 500
     },
     {
         "id": 6,
+        "imagen": "https://via.placeholder.com/150",
         "categoria": "niños",
-        "nombre": "remera",
+        "nombre": "Remera",
+        "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 300
     }
 ]

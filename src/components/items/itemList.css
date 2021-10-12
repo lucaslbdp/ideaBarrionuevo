@@ -1,0 +1,16 @@
+.contenedorPrincipal{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.contenedorCard{
+    width: 13rem;
+    height: 27rem;
+    font-weight: bold;
+    text-align-last: center;
+}
+
+.itemCount{
+    justify-content: space-around;
+}
