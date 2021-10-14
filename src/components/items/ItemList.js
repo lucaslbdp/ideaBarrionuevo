@@ -3,6 +3,7 @@ import Item from "./Item";
 import "./itemList.css";
 
 const ItemList = ({ productos }) => {
+
   return (
     <div className="contenedorPrincipal">
       {productos.length !== 0 ? (

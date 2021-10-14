@@ -1,6 +1,7 @@
 import React from "react";
 
 const ItemDetail = ({ producto }) => {
+
   return (
     <div className="card" style={{ width: "15rem", margin: "10px" }}>
       <img

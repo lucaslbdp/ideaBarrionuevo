@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "imagen": "https://via.placeholder.com/150",
-        "categoria": "bebés",
-        "nombre": "Jean",
+        "imagen": "/remeraJuvenil.jpg",
+        "categoria": "dama",
+        "nombre": "Remera",
         "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 400
     },
     {
         "id": 2,
-        "imagen": "https://via.placeholder.com/150",
+        "imagen": "/conjuntoBebe.jpg",
         "categoria": "bebés",
         "nombre": "Body",
         "descripcion": "Una descripcion para poder rellenar el container",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "imagen": "https://via.placeholder.com/150",
+        "imagen": "/remeraRiver.jpg",
         "categoria": "bebés",
         "nombre": "Remera",
         "descripcion": "Una descripcion para poder rellenar el container",
@@ -25,23 +25,23 @@
     },
     {
         "id": 4,
-        "imagen": "https://via.placeholder.com/150",
+        "imagen": "/remeraNiño.jpg",
         "categoria": "niños",
-        "nombre": "Jean",
+        "nombre": "remera",
         "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 400
     },
     {
         "id": 5,
-        "imagen": "https://via.placeholder.com/150",
+        "imagen": "/buzoTom.jpg",
         "categoria": "niños",
-        "nombre": "Camisa",
+        "nombre": "Buzo",
         "descripcion": "Una descripcion para poder rellenar el container",
         "precio": 500
     },
     {
         "id": 6,
-        "imagen": "https://via.placeholder.com/150",
+        "imagen": "/remeraMaggie.jpg",
         "categoria": "niños",
         "nombre": "Remera",
         "descripcion": "Una descripcion para poder rellenar el container",

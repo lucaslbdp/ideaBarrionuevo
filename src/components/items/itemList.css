@@ -6,11 +6,15 @@
 
 .contenedorCard{
     width: 13rem;
-    height: 27rem;
+    height: 30rem;
     font-weight: bold;
     text-align-last: center;
 }
 
 .itemCount{
     justify-content: space-around;
+}
+
+.contenedorCard img{
+    height: 200px;
 }
